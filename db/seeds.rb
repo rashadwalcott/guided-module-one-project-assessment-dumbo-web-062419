@@ -1,24 +1,19 @@
-%w(Cindy Sabi Monica Naiomi Amrit Aliciea Aleks Laurell).each do |name|
-Customer.create(name: name)
-end
+ [
+     "Cook-up Rice",
+     "Chicken Curry and Rice",
+     "Beef Curry and Rice",
+     "Duck Curry and Rice",
+     "Bake and Saltfish",
+     "Dhal and Rice",
+     "Bolanga and Rice",
+     "Chicken Fried Rice",
+     "Chicken Chowmein",
+     "Pepperpot",
+     "Fried Bora and Rice",
+     "Friend Plantain"
 
-[
-    "Cookup Rice",
-    "Curry Chicken", 
-    "Curry Beef",
-    "Bake and Saltfish",
-    "Curry Duck",
-    "Bolanga",
-    "Fried Rice",
-    "Chowmein"
-].each do |name|
-    Dishes.create(name: name)
-    end
+ ].each do |name|
+     Dishes.create(name: name)
+     end
 
-    [
-        "Guyana's Tastiness Location 1",
-        "Guyana's Tastiness Location 2",
-        "Guyana's Tastiness Location 3"
-].each do |name|
-    Restaurant.create(name: name)
-    end
+ Restaurant.create(name: "Patsy's Guyanese Cuisine")
