@@ -1,28 +1,20 @@
-#  [
-#      "Cook-up Rice",
-#      "Chicken Curry and Rice",
-#      "Beef Curry and Rice",
-#      "Duck Curry and Rice",
-#      "Bake and Saltfish",
-#      "Dhal and Rice",
-#      "Bolanga and Rice",
-#      "Chicken Fried Rice",
-#      "Chicken Chowmein",
-#      "Pepperpot",
-#      "Fried Bora and Rice",
-#      "Friend Plantain"
 
-#  ].each do |name|
-#      Dishes.create(name: name)
-#      end
 
  r1 = Restaurant.create(name: "Patsy's Guyanese Cuisine")
  
 
- cust1 = Customer.create(name: "Ayana")
- cust2 = Customer.create(name: "Annie")
- cust3 = Customer.create(name: "Rashad")
-
- Dishes.create(name: "Curry CHicken",customer_id: cust1.id, restaurant_id: r1.id )
- Dishes.create(name: "Cookup rice", customer_id: cust2.id, restaurant_id: r1.id)#ionce customer chooses UPODATE this with cust ID
- Dishes.create(name: "Friend Plantain", customer_id: cust3.id, restaurant_id: r1.id)
+ Dish.create(name: "Curry Chicken and White Rice",customer_id: nil, restaurant_id: r1.id )
+ Dish.create(name: "Cook-up Rice", customer_id: nil, restaurant_id: r1.id)#ionce customer chooses UPODATE this with cust ID
+ Dish.create(name: "Beef Curry and White Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Duck Curry and White Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Bake and Saltfish", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Dhal and Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Bolanga and White Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Chicken Fried Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Beef Fried Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Mixed Fried Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Chicken Chowmein", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Mixed Chowmein", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Pepperpot", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Fried Bora and White Rice", customer_id: nil, restaurant_id: r1.id)
+ Dish.create(name: "Fried Plantain", customer_id: nil, restaurant_id: r1.id)
